@@ -1,3 +1,20 @@
+# production files
+docs/
+env/
+environment/
+examples/
+resource/
+read-the-docs/
+
+.vscode/
+tests/
+documents/
+database/
+*.xlsx
+*.xls
+*.csv
+*.pdf
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

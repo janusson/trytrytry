@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-
-# Learn more: https://github.com/kennethreitz/setup.py
+# setup file for trytrytry
+# Learn more: https://github.com/janusson/trytrytry/README.md
 
 from setuptools import setup, find_packages
 
@@ -12,13 +12,13 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='example',
+    name='trytrytry',
     version='0.1.0',
-    description='Sample package',
+    description='Simple game in Python for weekend code sprint.',
     long_description=readme,
-    author='',
-    author_email='',
-    url='https://github.com/ ',
+    author='Eric Janusson',
+    author_email='ericjanusson@outlook.com',
+    url='https://github.com/janusson/trytrytry',
     license=license,
     packages=find_packages(exclude=('tests', 'docs'))
 )

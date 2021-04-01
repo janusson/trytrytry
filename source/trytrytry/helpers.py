@@ -1,5 +1,6 @@
-#snippets.py
-# A collection of helper functions for main-code.py
+def get_answer():
+    """Get an answer."""
+    return True
 
 def getFunction():
     """Print some words."""
