@@ -1,0 +1,6 @@
+continuous integration badges for github repo:
+version of software
+version of documentation
+Azure Pipelines (is the test suite passing on the master branch?)
+codecov (how much of the files are covered by tests)
+dependencies (up to date?)

@@ -1,0 +1,9 @@
+# requirements.txt
+
+# NOTE: this is a pip requirements file 
+# (it should be placed at the root of the repository).
+# This file specifies dependencies required for the Python module.
+
+#list of dependencies
+nose # ex: you might use nose for testing
+sphinx # ex: maybe sphinx for documentation generation
