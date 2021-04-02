@@ -1,4 +1,4 @@
-sprites.py
+# sprites.py
 import pygame as pg
 from settings import *
 

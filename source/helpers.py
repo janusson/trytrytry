@@ -1,7 +1,4 @@
-def get_answer():
-    """Get an answer."""
+# helper functions and classes
+from log import devlogging
+def start_logging():
     return True
-
-def getFunction():
-    """Print some words."""
-    return print('Some words')

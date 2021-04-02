@@ -1,5 +1,15 @@
 # -*- coding: utf-8 -*-
-from . import helpers
+import settings
+import helpers
+import sprites
+import devlogging
+
+def step1():
+    helpers.getFunction()
+    print('Snippets loaded and tested.')
+
+if __name__ == "__main__":
+    step1()
 
 def get_hmm():
     """Get a thought."""
