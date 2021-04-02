@@ -1,5 +1,4 @@
 import logging
-
 # deault log setup
 log_formatter = logging.Formatter('%(asctime)s:%(name)s:%(message)s')
 logger = logging.getLogger(__name__)
@@ -8,10 +7,11 @@ def debug_logger():
     '''
     Sets up a simple debug logger for development.
     '''
+    file_handler = logging.FileHandler(f'./log/{__name__}.log')
     logger.setLevel(logging.DEBUG)
     return debug_logger
 
-def file_logger():
+def logfile_record():
     file_handler = logging.FileHandler(f'./log/{__name__}.log')
     file_handler.setLevel(logging.ERROR)
     file_handler.setFormatter(log_formatter)
@@ -24,5 +24,12 @@ def stream_handler():
     stream_handler.setFormatter(log_formatter)
     logger.addHandler(streamer)
 
+# TODO finish setting up logging with choice of stream handler. 
+# export logfiles to 'log' output folder
+# see debugging, corey schafer on youtube, for more details
 
-# start = (datetime.today()).timestamp() # Keep track of rotation time
+if __name__ == "__main__":
+    debug_logger()
+    logfile_record()
+    # stream_handler()
+    print('Debug logging initialized.')

@@ -1,6 +1,6 @@
 # sprites.py
 import pygame as pg
-from settings import *
+import settings
 
 class Player(pg.sprite.Sprite):
     def __init__(self, game, x, y):

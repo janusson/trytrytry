@@ -8,8 +8,7 @@ def step1():
     helpers.getFunction()
     print('Snippets loaded and tested.')
 
-if __name__ == "__main__":
-    step1()
+
 
 def get_hmm():
     """Get a thought."""
@@ -104,3 +103,8 @@ while True:
     g.new()
     g.run()
     g.show_go_screen()
+
+
+
+if __name__ == "__main__":
+    step1()
