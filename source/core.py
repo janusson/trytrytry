@@ -4,26 +4,6 @@ import helpers
 import sprites
 import devlogging
 
-def step1():
-    helpers.getFunction()
-    print('Snippets loaded and tested.')
-
-
-
-def get_hmm():
-    """Get a thought."""
-    return 'hmmm...'
-
-def hmm():
-    """Contemplation..."""
-    if helpers.get_answer():
-        print(get_hmm())
-
-import pygame as pg
-import sys
-import settings
-import sprites
-
 class Game:
     def __init__(self):
         pg.init()

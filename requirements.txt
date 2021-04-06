@@ -8,3 +8,4 @@
 nose # ex: you might use nose for testing
 sphinx # ex: maybe sphinx for documentation generation
 pygame
+tcod
