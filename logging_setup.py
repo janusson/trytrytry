@@ -1,16 +1,16 @@
-# Start Here:
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#   Eric Janusson
+#   Python 3.9
+'''⌬
+Description: set render order
+⌬'''
 
-import os
-import sys
-import subprocess
 import time
 import logging
 
 # constants
 start_time = time.time()
-# default location of Driftscope Apex3D64.exe and logfile
-apexPath = r'C:\DriftScope\lib\Apex3D64.exe'
-apexLogPath = r'C:\DriftScope\log\_Apex3DLog.txt'
 
 # logging setup
 logger = logging.getLogger(__name__)

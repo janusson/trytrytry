@@ -1,3 +1,11 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#   Eric Janusson
+#   Python 3.9
+'''⌬
+Description: Controls actor AI.
+⌬'''
+
 from __future__ import annotations
 
 from typing import List, Tuple, TYPE_CHECKING

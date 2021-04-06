@@ -1,4 +1,10 @@
-#!/usr/bin/env python3
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#   Eric Janusson
+#   Python 3.9
+'''⌬
+Description: Handles entities like player, monsters, etc.
+⌬'''
 import copy
 import tcod
 from engine import Engine
@@ -41,7 +47,7 @@ def main() -> None:
         screen_width,
         screen_height,
         tileset=tileset,
-        title="Yet Another Roguelike Tutorial",
+        title="trytrytry",
         vsync=True,
     ) as context:
         root_console = tcod.Console(screen_width, screen_height, order="F")

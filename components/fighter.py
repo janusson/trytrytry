@@ -1,3 +1,11 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#   Eric Janusson
+#   Python 3.9
+'''⌬
+Description: Setup character class: "Fighter".
+⌬'''
+
 from __future__ import annotations
 
 from typing import TYPE_CHECKING
@@ -31,16 +39,16 @@ class Fighter(BaseComponent):
 
     def die(self) -> None:
         if self.engine.player is self.entity:
-            death_message = "You died!"
+            death_message = 'Enter the Abyss.'
             self.engine.event_handler = GameOverEventHandler(self.engine)
         else:
-            death_message = f"{self.entity.name} is dead!"
+            death_message = f'{self.entity.name} is dead!'
 
-        self.entity.char = "%"
+        self.entity.char = '%'
         self.entity.color = (191, 0, 0)
         self.entity.blocks_movement = False
         self.entity.ai = None
-        self.entity.name = f"remains of {self.entity.name}"
+        self.entity.name = f'remains of {self.entity.name}'
         self.entity.render_order = RenderOrder.CORPSE
 
         print(death_message)

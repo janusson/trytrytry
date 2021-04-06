@@ -9,7 +9,6 @@ from actions import Action, BumpAction, EscapeAction, WaitAction
 if TYPE_CHECKING:
     from engine import Engine
 
-
 MOVE_KEYS = {
     # Arrow keys.
     tcod.event.K_UP: (0, -1),
@@ -69,7 +68,8 @@ class MainGameEventHandler(EventHandler):
             action.perform()
 
             self.engine.handle_enemy_turns()
-            self.engine.update_fov()  # Update the FOV before the players next action.
+            self.engine.update_fov(
+            )  # Update the FOV before the players next action.
 
     def ev_keydown(self, event: tcod.event.KeyDown) -> Optional[Action]:
         action: Optional[Action] = None
@@ -109,5 +109,4 @@ class GameOverEventHandler(EventHandler):
         if key == tcod.event.K_ESCAPE:
             action = EscapeAction(self.engine.player)
 
-        # No valid key was pressed
         return action

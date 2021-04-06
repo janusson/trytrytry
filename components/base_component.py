@@ -1,3 +1,11 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#   Eric Janusson
+#   Python 3.9
+'''⌬
+Description: Basic game components.
+⌬'''
+
 from __future__ import annotations
 
 from typing import TYPE_CHECKING

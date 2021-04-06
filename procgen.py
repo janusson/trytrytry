@@ -1,3 +1,11 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#   Eric Janusson
+#   Python 3.9
+'''⌬
+Description: Procedurally generate map.
+⌬'''
+
 from __future__ import annotations
 
 import random
@@ -30,11 +38,11 @@ class RectangularRoom:
 
     @property
     def inner(self) -> Tuple[slice, slice]:
-        """Return the inner area of this room as a 2D array index."""
+        '''Return the inner area of this room as a 2D array index.'''
         return slice(self.x1 + 1, self.x2), slice(self.y1 + 1, self.y2)
 
     def intersects(self, other: RectangularRoom) -> bool:
-        """Return True if this room overlaps with another RectangularRoom."""
+        '''Return True if this room overlaps with another RectangularRoom.'''
         return (
             self.x1 <= other.x2
             and self.x2 >= other.x1
@@ -54,15 +62,15 @@ def place_entities(
 
         if not any(entity.x == x and entity.y == y for entity in dungeon.entities):
             if random.random() < 0.8:
-                entity_factories.orc.spawn(dungeon, x, y)
+                entity_factories.smelly_gobbo.spawn(dungeon, x, y)
             else:
-                entity_factories.troll.spawn(dungeon, x, y)
+                pass
 
 
 def tunnel_between(
     start: Tuple[int, int], end: Tuple[int, int]
 ) -> Iterator[Tuple[int, int]]:
-    """Return an L-shaped tunnel between these two points."""
+    '''Return an L-shaped tunnel between these two points.'''
     x1, y1 = start
     x2, y2 = end
     if random.random() < 0.5:  # 50% chance.
@@ -88,7 +96,7 @@ def generate_dungeon(
     max_monsters_per_room: int,
     engine: Engine,
 ) -> GameMap:
-    """Generate a new dungeon map."""
+    '''Generate a new map.'''
     player = engine.player
     dungeon = GameMap(engine, map_width, map_height, entities=[player])
 
@@ -101,7 +109,7 @@ def generate_dungeon(
         x = random.randint(0, dungeon.width - room_width - 1)
         y = random.randint(0, dungeon.height - room_height - 1)
 
-        # "RectangularRoom" class makes rectangles easier to work with
+        # 'RectangularRoom' class makes rectangles easier to work with
         new_room = RectangularRoom(x, y, room_width, room_height)
 
         # Run through the other rooms and see if they intersect with this one.

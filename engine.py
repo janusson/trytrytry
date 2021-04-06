@@ -1,6 +1,14 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#   Eric Janusson
+#   Python 3.9
+'''⌬
+Description: trytrytry game engine.
+⌬'''
+
 from __future__ import annotations
 
-# from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING
 
 from tcod.context import Context
 from tcod.console import Console
@@ -8,10 +16,10 @@ from tcod.map import compute_fov
 
 from input_handlers import MainGameEventHandler
 
-# if TYPE_CHECKING:
-#     from entity import Actor
-#     from game_map import GameMap
-#     from input_handlers import EventHandler
+if TYPE_CHECKING:
+    from entity import Actor
+    from game_map import GameMap
+    from input_handlers import EventHandler
 
 
 class Engine:

@@ -1,4 +1,11 @@
-# assign tile data types
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#   Eric Janusson
+#   Python 3.9
+'''⌬
+Description: Assign tile data types
+⌬'''
+
 from typing import Tuple
 import numpy as np
 
@@ -31,18 +38,22 @@ def new_tile(
     """Helper function for defining tile types """
     return np.array((walkable, transparent, dark, light), dtype=tile_dt)
 
-# SHROUD represents unexplored, unseen tiles
+# SHROUD is unexplored, unseen tiles
 SHROUD = np.array((ord(" "), (255, 255, 255), (0, 0, 0)), dtype=graphic_dt)
 
 floor = new_tile(
     walkable=True,
     transparent=True,
     dark=(ord(" "), (255, 255, 255), (50, 50, 150)),
-    light=(ord(" "), (255, 255, 255), (200, 180, 50)),
+    light=(ord(" "), (255, 255, 255), (150, 180, 50)),
+    # dark=(ord(" "), (255, 255, 255), (50, 50, 150)),
+    # light=(ord(" "), (255, 255, 255), (200, 180, 50)),
 )
 wall = new_tile(
     walkable=False,
     transparent=False,
     dark=(ord(" "), (255, 255, 255), (0, 0, 100)),
-    light=(ord(" "), (255, 255, 255), (130, 110, 50)),
+    light=(ord(" "), (255, 255, 255), (70, 80, 20)),
+    # dark=(ord(" "), (255, 255, 255), (0, 0, 100)),
+    # light=(ord(" "), (255, 255, 255), (130, 110, 50)),
 )
