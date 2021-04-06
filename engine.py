@@ -48,8 +48,8 @@ class Engine:
         self.game_map.render(console)
 
         console.print(
-            x=1,
-            y=47,
+            x=2,
+            y=2,
             string=f"HP: {self.player.fighter.hp}/{self.player.fighter.max_hp}",
         )
 

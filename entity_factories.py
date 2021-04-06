@@ -23,5 +23,5 @@ smelly_gobbo = Actor(
     color=(80, 150, 50),
     name='Smelly Gobbo',
     ai_cls=HostileEnemy,
-    fighter=Fighter(hp=10, defense=0, power=3)
+    fighter=Fighter(hp=8, defense=0, power=3)
     )
