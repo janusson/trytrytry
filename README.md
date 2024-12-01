@@ -1,6 +1,6 @@
 # trytrytry
 
-Game prototype for weekend development sprint.
+Python roguelike game prototype for weekend development sprint.
 
 ## trytrytry\source
 
