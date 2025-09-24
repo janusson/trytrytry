@@ -1,11 +1,5 @@
 # trytrytry
 
-
-# README.md (drop-in)
-
-````markdown
-# trytrytry
-
 A tiny Python roguelike prototype built over a weekend sprint, following the
 excellent **Roguelike Tutorial (tcod, 2019)**.
 
